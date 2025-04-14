@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Conversão de Moedas</title>
+</head>
+<body>
+    <header>
+        <h1>Conversão de Moedas</h1>
+        <div id="test">
+            <label id="dolar">Dolar</label>
+            <label id="euro">Euro</label>
+            <label id="iene">Iene</label>
+            <label id="yuan">Yuan</label>
+        </div>
+    </header>
+
+    <main>
+        <div id="conv">
+            <div class="input-group">
+                <label for="valor">Valor:</label>
+                <input type="number" name="valor" id="valor" placeholder="0.00" required>
+            </div>
+            <div id="tip_conv" class="input-group">
+                <label for="moeda">Moeda:</label>
+                <select id="moeda" required>
+                    <option value="" disabled selected>Selecione uma moeda</option>
+                    <option value="dolar">Dolar</option>
+                    <option value="euro">Euro</option>
+                    <option value="iene">Iene</option>
+                    <option value="yuan">Yuan</option>
+                </select>
+            </div>
+            <button id="conversao">Converter</button>
+        </div>
+        <div id="resultado"></div>
+    </main>
+</body>
+</html>
